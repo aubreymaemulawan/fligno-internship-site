@@ -31,8 +31,8 @@ export function Home() {
                 {/* Cherished Connections,
                 <br /> Unforgettable{" "} */}
                 {/* <span className="text-cyan-400">Growth</span> . */}
-                Hello, World! Meet [
-                <span className="text-cyan-400"> "Aubrey Mae" </span>] .
+                Hello, World! Meet <br className="lg:hidden" />[
+                <span className="text-cyan-400"> "Aubrey" </span>]
               </Typography>
               <Typography variant="lead" color="white" className=" opacity-80">
                 An aspiring Software Engineer armed with a passion for
@@ -74,7 +74,7 @@ export function Home() {
               </Typography>
               <Typography className="mb-8 font-normal text-blue-gray-500 ">
                 Hi there! My name is{" "}
-                <span className="font-semibold"> Aubrey Mae Mulawan </span>, and
+                <span className="font-semibold"> Aubrey Mae Mulawan</span>, and
                 I'm delighted to share a little about myself with you. I'm a
                 passionate IT enthusiast, with a love for Web/Mobile App
                 Development. I'm constantly curious and seeking new knowledge,
