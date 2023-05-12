@@ -18,7 +18,7 @@ export function Journal() {
   return (
     <>
       <div className="relative flex h-screen content-center items-end justify-center pb-32 pt-16">
-        <div className="bg-start bg-start absolute top-0 h-full w-full bg-[url('/img/1.jpg')] bg-cover bg-center" />
+        <div className="bg-start bg-start absolute top-0 h-full w-full bg-[url('/img/1.JPG')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/75 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
           <div className="flex flex-wrap items-center">
@@ -107,7 +107,7 @@ export function Journal() {
                 <CardHeader className="relative h-[75%]">
                   <img
                     alt="Card Image"
-                    src="/img/fligno/2.jpg"
+                    src="/img/fligno/2.JPG"
                     className="h-full w-full object-cover object-center"
                   />
                 </CardHeader>
@@ -200,17 +200,17 @@ export function Journal() {
               <div className=" grid grid-cols-1 gap-5 md:grid-cols-1 xl:grid-cols-1">
                 <TeamCard
                   key="1"
-                  img="/img/fligno/3.jpg"
+                  img="/img/fligno/3.JPG"
                   name="fligno-pitch-1"
                 />
                 <TeamCard
                   key="2"
-                  img="/img/fligno/4.jpg"
+                  img="/img/fligno/4.JPG"
                   name="fligno-pitch-2"
                 />
                 <TeamCard
                   key="3"
-                  img="/img/fligno/5.jpg"
+                  img="/img/fligno/5.JPG"
                   name="fligno-pitch-3"
                 />
               </div>
@@ -227,7 +227,7 @@ export function Journal() {
                 <CardHeader className="relative h-[75%]">
                   <img
                     alt="Card Image"
-                    src="/img/fligno/6.jpg"
+                    src="/img/fligno/6.JPG"
                     className="h-full w-full object-cover object-center"
                   />
                 </CardHeader>

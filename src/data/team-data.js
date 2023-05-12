@@ -1,6 +1,6 @@
 export const teamData = [
   {
-    img: "/img/8.jpg",
+    img: "/img/8.JPG",
     name: "Ryan Tompson",
     position: "Web Developer",
     socials: [
@@ -38,7 +38,7 @@ export const teamData = [
     ],
   },
   {
-    img: "/img/9.jpg",
+    img: "/img/9.JPG",
     name: "Alexa Smith",
     position: "UI/UX Designer",
     socials: [
