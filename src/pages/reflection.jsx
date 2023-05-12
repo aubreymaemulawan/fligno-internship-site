@@ -11,7 +11,7 @@ export function Reflection() {
   return (
     <>
       <section className="relative block h-[70vh]">
-        <div className="bg-profile-background absolute top-0 h-full w-full bg-[url('/img/fligno/6.jpg')] bg-cover bg-center" />
+        <div className="bg-profile-background absolute top-0 h-full w-full bg-[url('/img/fligno/6.JPG')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/75 bg-cover bg-center" />
       </section>
       <section className="relative bg-blue-gray-50/50 px-4 py-16">

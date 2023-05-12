@@ -297,7 +297,7 @@ export function Journal() {
             <Card color="gray" shadow={false}>
               <div className="overflow-hidden rounded-2xl shadow-md shadow-gray-800">
                 <Avatar
-                  src="/img/fligno/15.jpg"
+                  src="/img/fligno/15.JPG"
                   alt="fligno-15"
                   className="object-stretch h-full w-full object-center shadow-lg shadow-gray-500/25 transition delay-150 ease-in-out hover:scale-125 "
                 />
@@ -306,7 +306,7 @@ export function Journal() {
             <Card color="transparent" shadow={false}>
               <div className="h-full w-full overflow-hidden rounded-2xl shadow-md shadow-gray-800">
                 <Avatar
-                  src="/img/fligno/16.jpg"
+                  src="/img/fligno/16.JPG"
                   alt="fligno-16"
                   className="h-full w-full object-cover object-center shadow-lg shadow-gray-500/25 transition delay-150 ease-in-out hover:scale-125 "
                 />
