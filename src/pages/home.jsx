@@ -28,9 +28,6 @@ export function Home() {
                 shadow={true}
                 className="mb-6 font-black drop-shadow-lg"
               >
-                {/* Cherished Connections,
-                <br /> Unforgettable{" "} */}
-                {/* <span className="text-cyan-400">Growth</span> . */}
                 Hello, World! Meet <br className="lg:hidden" />[
                 <span className="text-cyan-400"> "Aubrey" </span>]
               </Typography>
@@ -38,8 +35,6 @@ export function Home() {
                 An aspiring Software Engineer armed with a passion for
                 innovation. Join me as I share insights, and reflections, giving
                 you a glimpse into the person behind the words.
-                {/* Join me as I
-                navigate the dynamic landscape of coding, one line at a time! */}
               </Typography>
             </div>
           </div>
@@ -102,7 +97,7 @@ export function Home() {
                 strive to inspire and uplift others around me.
               </Typography>
             </div>
-            <div className="mx-auto mt-24 flex h-full w-full items-center justify-center px-4 md:w-4/12 lg:mt-0">
+            <div className="mx-auto mt-12 flex h-full w-full items-center justify-center px-4 md:w-4/12 lg:mt-24">
               <Card className="shadow-lg shadow-gray-500/10">
                 <CardHeader className="relative h-[75%]">
                   <img
@@ -123,7 +118,7 @@ export function Home() {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="h-6 w-6"
+                      className="h-6 w-6 animate-pulse"
                     >
                       <path
                         strokeLinecap="round"
@@ -174,8 +169,8 @@ export function Home() {
             together and motivating them, the teacher is the most important." -
             Bill Gates
           </PageTitle>
-          <div className="mt-32 flex flex-wrap items-start">
-            <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
+          <div className="mt-12 flex flex-wrap items-start lg:mt-32">
+            <div className="mx-auto  w-full px-4 md:w-5/12 ">
               <Typography className="mb-8 font-normal text-blue-gray-500 ">
                 I'm really not a tech-savvy kind of person growing up, having no
                 background and experience on how technology evolves or even how
@@ -203,26 +198,14 @@ export function Home() {
                 effectively and overcome obstacles that inevitably arise during
                 a project. I learned how to handle burnout and avoidable
                 problems, which were valuable lessons that I will carry with me
-                throughout my career in IT.
-                {/* In my sophomore year, I landed an
-                internship with a local tech company, where I gained valuable
-                experience working on real-world projects and collaborating with
-                other professionals in the field. This experience gave me a
-                deeper understanding of the industry and helped me to build my
-                skills in programming, software development, and project
-                management. By my junior year, I was ready for a new challenge,
-                and I decided to study abroad in Asia, where I was able to
-                immerse myself in a new culture and learn about technology from
-                a global perspective. This experience not only expanded my
-                knowledge and skills but also gave me a newfound appreciation
-                for the diversity and complexity of the tech industry.  */}
-                Now, as a senior, I am excited to embark on the next chapter of
-                my career in IT. My experiences as a student have taught me the
-                importance of networking, hands-on experience, and a passion for
-                learning in the ever-evolving field of technology.
+                throughout my career in IT. Now, as a senior, I am excited to
+                embark on the next chapter of my career in IT. My experiences as
+                a student have taught me the importance of networking, hands-on
+                experience, and a passion for learning in the ever-evolving
+                field of technology.
               </Typography>
             </div>
-            <div className="mx-auto mt-24 flex-col items-start justify-start px-4 md:w-4/12 lg:-mt-8">
+            <div className="mx-auto flex-col items-start justify-start px-4 md:w-4/12 ">
               {/* <Card className="shadow-lg shadow-gray-500/10">
                 <CardHeader className="relative h-[75%]">
                   <img
@@ -282,41 +265,6 @@ export function Home() {
               {/* </div> */}
             </div>
           </div>
-          {/* <div className="mx-auto mb-48 mt-20 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
-            {contactData.map(({ title, icon, description }) => (
-              <Card
-                key={title}
-                color="transparent"
-                shadow={false}
-                className="text-center text-blue-gray-900"
-              >
-                <div className="mx-auto mb-6 grid h-14 w-14 place-items-center rounded-full bg-white shadow-lg shadow-gray-500/20">
-                  {React.createElement(icon, {
-                    className: "w-5 h-5",
-                  })}
-                </div>
-                <Typography variant="h5" color="blue-gray" className="mb-2">
-                  {title}
-                </Typography>
-                <Typography className="font-normal text-blue-gray-500">
-                  {description}
-                </Typography>
-              </Card>
-            ))}
-          </div>
-          <PageTitle heading="Want to work with us?">
-            Complete this form and we will get back to you in 24 hours.
-          </PageTitle>
-          <form className="mx-auto mt-12 max-w-3xl text-center">
-            <div className="mb-8 flex gap-8">
-              <Input variant="standard" size="lg" label="Full Name" />
-              <Input variant="standard" size="lg" label="Email Address" />
-            </div>
-            <Textarea variant="standard" size="lg" label="Message" rows={8} />
-            <Button variant="gradient" size="lg" className="mt-8">
-              Send Message
-            </Button>
-          </form> */}
         </div>
       </section>
       <div className="bg-blue-gray-50/50">

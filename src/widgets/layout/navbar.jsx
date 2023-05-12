@@ -21,20 +21,20 @@ export function Navbar({ brandName, routes, action }) {
   }, []);
 
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 text-inherit lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mb-4 mt-2 flex flex-col gap-2 text-inherit hover:font-bold lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       {routes.map(({ name, path, icon, href, target }) => (
         <Typography
           key={name}
           as="li"
           variant="small"
           color="inherit"
-          className="capitalize"
+          className="capitalize  hover:text-cyan-500"
         >
           {href ? (
             <a
               href={href}
               target={target}
-              className="flex items-center gap-1 p-1 font-normal"
+              className="flex items-center gap-1 p-1 font-normal text-cyan-400"
             >
               {icon &&
                 React.createElement(icon, {
