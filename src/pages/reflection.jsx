@@ -98,7 +98,7 @@ export function Reflection() {
                       Throughout my practicum, I spent my hours engaged in a
                       variety of tasks and projects. I successfully issued
                       important bugs on their existing apps, developed the
-                      backend as well as frontsend side of our internship
+                      backend as well as frontend side of our internship
                       project, and learned new programming languages and
                       frameworks. Additionally, I actively contributed to the
                       team's code repository, conducting code reviews, and
@@ -153,7 +153,7 @@ export function Reflection() {
                       </Typography>{" "}
                       <br />
                       The most memorable event during my practicum was when the
-                      team successfully pitched a Curatoro that we had been
+                      team successfully pitched the 'Curatoro' that we had been
                       working on for weeks. Witnessing the culmination of our
                       efforts and the positive response from the executives was
                       truly rewarding. The event not only highlighted the
@@ -195,7 +195,8 @@ export function Reflection() {
                       experienced professionals. Be proactive in seeking out
                       challenging tasks and projects that will allow you to
                       stretch your capabilities. Lastly, foster relationships
-                      with your colleagues, as they can serve as valuable
+                      with your colleagues, as they can serve as valuable assets
+                      throughout your career.
                     </Typography>
 
                     <Typography className="my-8 font-normal text-blue-gray-500">
@@ -208,7 +209,11 @@ export function Reflection() {
                       promising career filled with continuous growth and
                       meaningful contributions.
                       <span className="mt-10 flex flex-row">
-                        Thank you FLIGNO Family
+                        Thank you
+                        <span className="mx-1 font-semibold text-cyan-500">
+                          FLIGNO
+                        </span>
+                        Family
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
