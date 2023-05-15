@@ -609,7 +609,7 @@ export function Profile() {
                     <Card color="transparent" shadow={false}>
                       <div className="h-[50%] overflow-hidden rounded-2xl shadow-md shadow-gray-800">
                         <Avatar
-                          src="/img/a-1.jpg"
+                          src="/img/a-1.JPG"
                           alt="fligno-15"
                           className="h-full w-full object-center shadow-lg shadow-gray-500/25 transition delay-150 ease-in-out hover:scale-125 "
                         />
