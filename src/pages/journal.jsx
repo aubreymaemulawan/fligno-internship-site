@@ -29,7 +29,7 @@ export function Journal() {
                 shadow={true}
                 className="mb-6 font-black drop-shadow-lg"
               >
-                Cherished Connections,
+                Cherished Connections.
                 <br /> Unforgettable{" "}
                 <span className="text-cyan-400">Growth</span> .
               </Typography>
@@ -241,7 +241,7 @@ export function Journal() {
                   </Typography>
                   <Typography className="font-normal text-blue-gray-500">
                     Basic CRUD Laravel API training with Software Engineers of
-                    Fligno. It was a fun and engaging experience, kuddos to the
+                    Fligno. It was a fun and engaging experience, kudos to the
                     trainors who were very attentive to our questions ;)
                   </Typography>
                 </CardBody>

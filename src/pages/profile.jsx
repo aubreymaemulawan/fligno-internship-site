@@ -1,9 +1,12 @@
 import {
   MapPinIcon,
+  UserGroupIcon,
   AtSymbolIcon,
   LinkIcon,
   UserIcon,
   LightBulbIcon,
+  CodeBracketSquareIcon,
+  BookOpenIcon,
 } from "@heroicons/react/24/solid";
 
 import React from "react";
@@ -30,7 +33,7 @@ export function Profile() {
         <div className="absolute top-0 h-full w-full bg-black/75 bg-cover bg-center" />
       </section>
 
-      <section className="relative bg-blue-gray-50/50 px-4 py-16">
+      <section className="relative bg-blue-gray-50/50 px-12 py-16">
         <div className="container mx-auto">
           <div className="relative -mt-64 mb-6 flex w-full min-w-0 flex-col break-words rounded-3xl bg-white shadow-xl shadow-gray-500/5">
             <div className="px-6">
@@ -114,29 +117,84 @@ export function Profile() {
               <section className="mt-12 px-4 pb-10 pt-4">
                 <div className="container mx-auto">
                   <div className="mx-10 grid grid-cols-1 gap-10 md:grid-cols-1 lg:grid-cols-2">
-                    <FeatureCard
-                      key="1"
-                      color="red"
-                      title="Personal Skills"
-                      icon={React.createElement(LightBulbIcon, {
-                        className: "w-5 h-5 text-white",
-                      })}
-                      description="hihihihi"
-                    />
-                    <FeatureCard
-                      key="1"
-                      color="teal"
-                      title="Technical Skills"
-                      icon={React.createElement(LightBulbIcon, {
-                        className: "w-5 h-5 text-white",
-                      })}
-                      description="hihihihi"
-                    />
+                    <Card className="items-center justify-center rounded-2xl shadow-lg shadow-gray-900/10">
+                      <CardBody className="px-8 text-center">
+                        <IconButton
+                          variant="gradient"
+                          size="lg"
+                          color="cyan"
+                          className="pointer-events-none mb-6 animate-bounce rounded-full"
+                        >
+                          {React.createElement(LightBulbIcon, {
+                            className: "w-5 h-5 text-white",
+                          })}
+                        </IconButton>
+                        <Typography
+                          variant="h5"
+                          className="mb-2"
+                          color="blue-gray"
+                        >
+                          Personal Skills
+                        </Typography>
+                        <Typography className="mt-5 flex flex-row gap-8 text-left font-normal text-blue-gray-600">
+                          <ul className="list-disc">
+                            <li>Leadership</li>
+                            <li>Perseverance</li>
+                            <li>Communication</li>
+                            <li>Analytical Abilities</li>
+                          </ul>
+                          <ul className="list-disc">
+                            <li>Organization</li>
+                            <li>Problem Solving</li>
+                            <li>Project Management</li>
+                            <li>Interest in Helping Others</li>
+                          </ul>
+                        </Typography>
+                      </CardBody>
+                    </Card>
+                    <Card className="items-center justify-center rounded-2xl shadow-lg shadow-gray-900/10">
+                      <CardBody className="px-8 text-center">
+                        <IconButton
+                          variant="gradient"
+                          size="lg"
+                          color="cyan"
+                          className="pointer-events-none mb-6 animate-bounce rounded-full"
+                        >
+                          {React.createElement(CodeBracketSquareIcon, {
+                            className: "w-5 h-5 text-white",
+                          })}
+                        </IconButton>
+                        <Typography
+                          variant="h5"
+                          className="mb-2"
+                          color="blue-gray"
+                        >
+                          Technical Skills
+                        </Typography>
+                        <Typography className="mt-5 flex flex-row gap-8 text-left font-normal text-blue-gray-600">
+                          <ul className="list-disc">
+                            <li>PHP/Laravel</li>
+                            <li>
+                              Javascript/JQuery/
+                              <br />
+                              ReactJS
+                            </li>
+                            <li>Python/DJango</li>
+                          </ul>
+                          <ul className="list-disc">
+                            <li>Dart/Flutter</li>
+                            <li>MySQL</li>
+                            <li>Java</li>
+                            <li>Selenium Robot Framework</li>
+                          </ul>
+                        </Typography>
+                      </CardBody>
+                    </Card>
                   </div>
                 </div>
               </section>
 
-              <section id="welcoming" className="px-4 pb-20">
+              <section id="about-me" className="px-4 pb-20">
                 <div className="container mx-auto">
                   <div className="mt-32 flex flex-wrap items-start">
                     <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
@@ -151,15 +209,22 @@ export function Profile() {
                         About Me
                       </Typography>
                       <Typography className="mb-8 font-normal text-blue-gray-500 ">
-                        My time as an intern at Fligno was a truly enriching
-                        experience. From the moment I stepped through their
-                        doors, I was greeted with a warm and supportive
-                        environment that fostered growth and learning. During my
-                        internship, I had the opportunity to work alongside
-                        skilled professionals in the IT industry. This allowed
-                        me to witness firsthand the inner workings of a
-                        reputable company and gain practical knowledge that
-                        cannot be acquired through textbooks alone.
+                        I'm Aubrey Mae Mulawan, also known as 'Brie.' As an
+                        enthusiastic IT student specializing in software
+                        development, I am passionate about coding, web/mobile
+                        development, and database management. Proficient in PHP,
+                        JavaScript, HTML, CSS, and Java, I create functional
+                        software and user-friendly websites. I embarked on my IT
+                        journey in Senior High School, focusing on the TVL-IT
+                        Programming track. Currently pursuing my Bachelor's
+                        degree in Information Technology, I consistently excel
+                        in programming classes, achieving the dean's list and
+                        standing out as a top student. Committed to continuous
+                        learning, I stay updated on the latest IT trends through
+                        workshops and online communities. With strong analytical
+                        and problem-solving skills, I collaborate effectively to
+                        find innovative solutions. Let's connect and shape the
+                        future of IT together!
                       </Typography>
                     </div>
                     <div className="mx-auto mt-12 flex h-full w-full items-center justify-center px-4 md:w-4/12 lg:mt-0">
@@ -177,12 +242,222 @@ export function Profile() {
                             color="blue-gray"
                             className="mb-3 font-bold"
                           >
-                            Welcoming Family
+                            //
                           </Typography>
                           <Typography className="font-normal text-blue-gray-500">
-                            The HR Management was very thoughtful on introducing
-                            us to all the employees of the company. Which made
-                            us feel special of course :)
+                            //
+                          </Typography>
+                        </CardBody>
+                      </Card>
+                    </div>
+                  </div>
+
+                  <div className="mt-32 flex flex-wrap items-center rounded-xl ">
+                    <div className="mx-auto flex h-full w-full items-center justify-center px-4 md:w-4/12 lg:mt-0">
+                      <Card className="shadow-lg shadow-gray-500/10">
+                        <CardHeader className="relative h-[75%]">
+                          <img
+                            alt="Card Image"
+                            src="/img/3.png"
+                            className="h-full w-full object-cover object-center"
+                          />
+                        </CardHeader>
+                        <CardBody>
+                          <Typography
+                            variant="h5"
+                            color="blue-gray"
+                            className="mb-3 font-bold"
+                          >
+                            //
+                          </Typography>
+                          <Typography className="font-normal text-blue-gray-500">
+                            //
+                          </Typography>
+                        </CardBody>
+                      </Card>
+                    </div>
+                    <div className=" mx-auto mt-12 w-full px-4 md:w-5/12">
+                      <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg">
+                        <BookOpenIcon className="h-6 w-6 text-blue-gray-900" />
+                      </div>
+                      <Typography
+                        variant="h3"
+                        className="mb-3 font-bold"
+                        color="blue-gray"
+                      >
+                        Education
+                      </Typography>
+                      <Typography className="mb-8 font-normal text-blue-gray-500 ">
+                        <div className="flex  flex-row justify-start">
+                          <div className="w-full">
+                            <ul className=" list-disc">
+                              <li className="mb-2">
+                                <div className="flex flex-row justify-between ">
+                                  <span className="font-medium">PRIMARY</span>
+                                  <span className="italic">2007 - 2013</span>
+                                </div>
+                                Macanhan Elementary School
+                              </li>
+                              <li className="mb-2">
+                                <div className="flex flex-row justify-between">
+                                  <span className="font-medium">SECONDARY</span>
+                                  <span className="italic">2013 - 2017</span>
+                                </div>
+                                Carmen National High School
+                              </li>
+                              <li className="mb-2">
+                                <div className="flex flex-row justify-between">
+                                  <span className="font-medium">
+                                    UPPER SECONDARY
+                                  </span>
+                                  <span className="italic">2017 - 2019</span>
+                                </div>
+                                Phinma Cagayan de Oro College
+                                <br />
+                                <span className="italic">
+                                  TVL - IT Programming Track
+                                </span>
+                                <ul className="ml-5 list-decimal text-[14px]">
+                                  <li>Grade 11 With Honors</li>
+                                  <li>Grade 12 With Honors</li>
+                                </ul>
+                              </li>
+                              <li className="mb-2 ">
+                                <div className="flex flex-row justify-between">
+                                  <span className="font-medium"> TERTIARY</span>
+                                  <span className="italic">2019 - 2023</span>
+                                </div>
+                                University of Science and Technology of <br />
+                                Southern Philippines
+                                <br />
+                                <span className="italic">
+                                  Bachelor of Science in Information Technology
+                                </span>
+                                <ul className="ml-5 list-decimal text-[14px]">
+                                  <li>
+                                    1st Year Deans Lister - 1st & 2nd Semester
+                                  </li>
+                                  <li>
+                                    2nd Year Deans Lister - 1st & 2nd Semester
+                                  </li>
+                                  <li>
+                                    3rd Year Deans Lister - 1st & 2nd Semester
+                                  </li>
+                                  <li>4th Year Deans Lister - 1st Semester</li>
+                                  <li>
+                                    City Scholarship Program (ISDA) Scholar
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </Typography>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="pre-experience" className="px-4 pb-20">
+                <div className="container mx-auto">
+                  <div className="mt-32 flex flex-wrap items-start">
+                    <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
+                      <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg">
+                        <UserGroupIcon className="h-6 w-6 text-blue-gray-900" />
+                      </div>
+                      <Typography
+                        variant="h3"
+                        className="mb-3 font-bold"
+                        color="blue-gray"
+                      >
+                        Pre-Professional Experience
+                      </Typography>
+                      <Typography className="mb-8 font-normal text-blue-gray-500 ">
+                        <div className="flex  flex-row justify-start">
+                          <div className="w-full">
+                            <ul className=" list-disc">
+                              <li className="mb-2">
+                                <div className="flex flex-row justify-between ">
+                                  <span className="font-medium">PRIMARY</span>
+                                  <span className="italic">2007 - 2013</span>
+                                </div>
+                                Macanhan Elementary School
+                              </li>
+                              <li className="mb-2">
+                                <div className="flex flex-row justify-between">
+                                  <span className="font-medium">SECONDARY</span>
+                                  <span className="italic">2013 - 2017</span>
+                                </div>
+                                Carmen National High School
+                              </li>
+                              <li className="mb-2">
+                                <div className="flex flex-row justify-between">
+                                  <span className="font-medium">
+                                    UPPER SECONDARY
+                                  </span>
+                                  <span className="italic">2017 - 2019</span>
+                                </div>
+                                Phinma Cagayan de Oro College
+                                <br />
+                                <span className="italic">
+                                  TVL - IT Programming Track
+                                </span>
+                                <ul className="ml-5 list-decimal text-[14px]">
+                                  <li>Grade 11 With Honors</li>
+                                  <li>Grade 12 With Honors</li>
+                                </ul>
+                              </li>
+                              <li className="mb-2 ">
+                                <div className="flex flex-row justify-between">
+                                  <span className="font-medium"> TERTIARY</span>
+                                  <span className="italic">2019 - 2023</span>
+                                </div>
+                                University of Science and Technology of <br />
+                                Southern Philippines
+                                <br />
+                                <span className="italic">
+                                  Bachelor of Science in Information Technology
+                                </span>
+                                <ul className="ml-5 list-decimal text-[14px]">
+                                  <li>
+                                    1st Year Deans Lister - 1st & 2nd Semester
+                                  </li>
+                                  <li>
+                                    2nd Year Deans Lister - 1st & 2nd Semester
+                                  </li>
+                                  <li>
+                                    3rd Year Deans Lister - 1st & 2nd Semester
+                                  </li>
+                                  <li>4th Year Deans Lister - 1st Semester</li>
+                                  <li>
+                                    City Scholarship Program (ISDA) Scholar
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </Typography>
+                    </div>
+                    <div className="mx-auto mt-12 flex h-full w-full items-center justify-center px-4 md:w-4/12 lg:mt-0">
+                      <Card className="shadow-lg shadow-gray-500/10">
+                        <CardHeader className="relative h-[75%]">
+                          <img
+                            alt="Card Image"
+                            src="/img/me-2.png"
+                            className="h-full w-full object-cover object-center"
+                          />
+                        </CardHeader>
+                        <CardBody>
+                          <Typography
+                            variant="h5"
+                            color="blue-gray"
+                            className="mb-3 font-bold"
+                          >
+                            //
+                          </Typography>
+                          <Typography className="font-normal text-blue-gray-500">
+                            //
                           </Typography>
                         </CardBody>
                       </Card>
@@ -205,51 +480,232 @@ export function Profile() {
                             color="blue-gray"
                             className="mb-3 font-bold"
                           >
-                            Best Mentorship
+                            //
                           </Typography>
                           <Typography className="font-normal text-blue-gray-500">
-                            Big thanks to Mr. Richard who had pushed us to bring
-                            out our true potential and empowered us with real
-                            life situations that we will surely bring on to our
-                            next journey :)
+                            //
                           </Typography>
                         </CardBody>
                       </Card>
                     </div>
                     <div className="mx-auto mt-12 w-full px-4 md:w-5/12">
+                      <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg">
+                        <BookOpenIcon className="h-6 w-6 text-blue-gray-900" />
+                      </div>
                       <Typography
                         variant="h3"
                         className="mb-3 font-bold"
                         color="blue-gray"
                       >
-                        Education
+                        Academic Achievements
                       </Typography>
                       <Typography className="mb-8 font-normal text-blue-gray-500 ">
-                        Under the guidance and mentorship of MR. Richard
-                        Badlisan, I was entrusted with various responsibilities
-                        and projects. Whether it was developing software
-                        solutions, project testing, or collaborating with
-                        cross-functional teams, each task provided me with
-                        invaluable hands-on experience and a chance to apply the
-                        theories and skills I had learned during my studies.
-                        <br />
-                        <br />
-                        Throughout my journey, he emphasized not just technical
-                        competence, but also the importance of teamwork,
-                        effective communication, and problem-solving. I had the
-                        privilege of working alongside a diverse and talented
-                        group of individuals who are also interns who not only
-                        challenged me to grow professionally but also fostered a
-                        supportive and collaborative atmosphere.
+                        <div className="flex  flex-row justify-start">
+                          <div className="w-full">
+                            <ul className=" list-disc">
+                              <li className="mb-2">
+                                <div className="flex flex-row justify-between ">
+                                  <span className="font-medium">PRIMARY</span>
+                                  <span className="italic">2007 - 2013</span>
+                                </div>
+                                Macanhan Elementary School
+                              </li>
+                              <li className="mb-2">
+                                <div className="flex flex-row justify-between">
+                                  <span className="font-medium">SECONDARY</span>
+                                  <span className="italic">2013 - 2017</span>
+                                </div>
+                                Carmen National High School
+                              </li>
+                              <li className="mb-2">
+                                <div className="flex flex-row justify-between">
+                                  <span className="font-medium">
+                                    UPPER SECONDARY
+                                  </span>
+                                  <span className="italic">2017 - 2019</span>
+                                </div>
+                                Phinma Cagayan de Oro College
+                                <br />
+                                <span className="italic">
+                                  TVL - IT Programming Track
+                                </span>
+                                <ul className="ml-5 list-decimal text-[14px]">
+                                  <li>Grade 11 With Honors</li>
+                                  <li>Grade 12 With Honors</li>
+                                </ul>
+                              </li>
+                              <li className="mb-2 ">
+                                <div className="flex flex-row justify-between">
+                                  <span className="font-medium"> TERTIARY</span>
+                                  <span className="italic">2019 - 2023</span>
+                                </div>
+                                University of Science and Technology of <br />
+                                Southern Philippines
+                                <br />
+                                <span className="italic">
+                                  Bachelor of Science in Information Technology
+                                </span>
+                                <ul className="ml-5 list-decimal text-[14px]">
+                                  <li>
+                                    1st Year Deans Lister - 1st & 2nd Semester
+                                  </li>
+                                  <li>
+                                    2nd Year Deans Lister - 1st & 2nd Semester
+                                  </li>
+                                  <li>
+                                    3rd Year Deans Lister - 1st & 2nd Semester
+                                  </li>
+                                  <li>4th Year Deans Lister - 1st Semester</li>
+                                  <li>
+                                    City Scholarship Program (ISDA) Scholar
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
                       </Typography>
                     </div>
                   </div>
                 </div>
               </section>
 
-              <section id="curatoro-pitch" className=" px-4 py-24">
+              {/* 
+              <section id="learn-at-fligno" className="px-4 pb-20 pt-4">
                 <div className="container mx-auto">
-                  <PageTitle heading="CURATORO: Product Pitching">
+                  <div className="mt-12 flex  flex-wrap items-center">
+                    <div className="mx-auto mt-12 flex h-full w-full items-center justify-center px-4 md:w-4/12 ">
+                      <Card className="shadow-lg shadow-gray-500/10">
+                        <CardHeader className="relative h-[75%]">
+                          <img
+                            alt="Card Image"
+                            src="/img/fligno/6.jpg"
+                            className="h-full w-full object-cover object-center"
+                          />
+                        </CardHeader>
+                        <CardBody>
+                          <Typography
+                            variant="h5"
+                            color="blue-gray"
+                            className="mb-3 font-bold"
+                          >
+                            Learn At Fligno
+                          </Typography>
+                          <Typography className="font-normal text-blue-gray-500">
+                            Basic CRUD Laravel API training with Software
+                            Engineers of Fligno. It was a fun and engaging
+                            experience, kuddos to the trainors who were very
+                            attentive to our questions ;)
+                          </Typography>
+                        </CardBody>
+                      </Card>
+                    </div>
+                    <div className="mx-auto mt-12 w-full px-4 md:w-5/12">
+                      <Typography className="mb-8 font-normal text-blue-gray-500 ">
+                        Fligno has always prioritized the growth and development
+                        of its employees, and one of the ways they exemplified
+                        this was through their engaging learning sessions. The
+                        company recognized the importance of continuous learning
+                        in the ever-evolving field of technology, and they
+                        actively encouraged us to participate in these valuable
+                        sessions. Whether it was workshops, training programs,
+                        or guest speaker sessions, Fligno provided us with
+                        opportunities to expand our knowledge and enhance our
+                        skills. These learning sessions were thoughtfully
+                        designed to cover a wide range of topics, from the
+                        latest industry trends to emerging technologies. By
+                        joining these sessions, we were able to stay abreast of
+                        the cutting-edge advancements in our field and
+                        strengthen our expertise.
+                      </Typography>
+                    </div>
+                  </div>
+                </div>
+              </section> */}
+
+              {/* <section id="academic-projects" className="px-4 pb-32 pt-20">
+                <div className="container mx-auto">
+                  <PageTitle heading="Academic Projects">
+                    Immensely grateful for the opportunity to collaborate with
+                    these exceptional individuals. Our collaborative environment
+                    fostered a sense of camaraderie and teamwork, where ideas
+                    were freely shared, and diverse perspectives were valued.
+                  </PageTitle>
+                  <div className="mx-3 mt-12 grid grid-cols-1 gap-20 gap-x-10 gap-y-10 md:grid-cols-2 lg:mx-20 lg:mt-24 xl:grid-cols-4">
+                    {highlights.map(({ img, name }) => (
+                      <TeamCard key={name} img={img} name={name} />
+                    ))}
+                  </div>
+                </div>
+              </section> */}
+
+              <section id="academic-projects" className="px-4 pb-48 pt-20">
+                <div className="container mx-auto">
+                  <PageTitle heading="Academic Projects">
+                    Curatoro is the result of our teamwork and collaboration
+                    during our internship at Fligno. It is a marketplace for Art
+                    Enthusiasts who love to buy original made artworks. I play
+                    the part as the Backend Developer of this project and this
+                    is still a work on progress but I would say people will love
+                    this once this project will be deployed.
+                  </PageTitle>
+                  <div className="mx-3 mt-12 grid grid-cols-1 gap-20 gap-x-10 gap-y-10 md:grid-cols-1 lg:mx-20 lg:mt-24 xl:grid-cols-2">
+                    <Card color="gray" shadow={false}>
+                      <div className="overflow-hidden rounded-2xl shadow-md shadow-gray-800">
+                        <Avatar
+                          src="/img/fligno/15.jpg"
+                          alt="fligno-15"
+                          className="object-stretch h-full w-full object-center shadow-lg shadow-gray-500/25 transition delay-150 ease-in-out hover:scale-125 "
+                        />
+                      </div>
+                    </Card>
+                    <Card color="transparent" shadow={false}>
+                      <div className="h-full w-full overflow-hidden rounded-2xl shadow-md shadow-gray-800">
+                        <Avatar
+                          src="/img/fligno/16.jpg"
+                          alt="fligno-16"
+                          className="h-full w-full object-cover object-center shadow-lg shadow-gray-500/25 transition delay-150 ease-in-out hover:scale-125 "
+                        />
+                      </div>
+                    </Card>
+                  </div>
+                </div>
+              </section>
+
+              <section id="passion-values" className="px-4 py-24">
+                <div className="container mx-auto">
+                  <PageTitle heading="Passion & Values">
+                    Pitching a product to the executives of Fligno was a
+                    remarkable experience that stretched my abilities and
+                    broadened my perspective.
+                  </PageTitle>
+                </div>
+                <div className=" border-blue-gray-50 py-6 text-center">
+                  <div className="mt-4 flex flex-wrap justify-center">
+                    <div className="flex w-full flex-col items-center px-4 lg:w-9/12">
+                      <Typography className=" font-normal text-blue-gray-500">
+                        A 4th Year College Student with a degree in Information
+                        Technology. I am a motivated individual with a passion
+                        for technology and a drive for continuous learning. As
+                        an enthusiastic problem solver and creative thinker, I
+                        thrive in dynamic environments where I can apply my
+                        skills and contribute to meaningful projects. Whether
+                        it's programming, troubleshooting, or exploring new
+                        technologies, I approach every challenge with dedication
+                        and a desire to expand my knowledge. With a strong
+                        commitment to excellence and a collaborative mindset, I
+                        am excited to make a positive impact in the field of
+                        technology and contribute to innovative solutions that
+                        shape the future.
+                      </Typography>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="personal-interest" className=" px-4 py-24">
+                <div className="container mx-auto">
+                  <PageTitle heading="Personal Interest">
                     Pitching a product to the executives of Fligno was a
                     remarkable experience that stretched my abilities and
                     broadened my perspective.
@@ -317,107 +773,6 @@ export function Profile() {
                         />
                       </div>
                     </div>
-                  </div>
-                </div>
-              </section>
-
-              <section id="learn-at-fligno" className="px-4 pb-20 pt-4">
-                <div className="container mx-auto">
-                  <div className="mt-12 flex  flex-wrap items-center">
-                    <div className="mx-auto mt-12 flex h-full w-full items-center justify-center px-4 md:w-4/12 ">
-                      <Card className="shadow-lg shadow-gray-500/10">
-                        <CardHeader className="relative h-[75%]">
-                          <img
-                            alt="Card Image"
-                            src="/img/fligno/6.jpg"
-                            className="h-full w-full object-cover object-center"
-                          />
-                        </CardHeader>
-                        <CardBody>
-                          <Typography
-                            variant="h5"
-                            color="blue-gray"
-                            className="mb-3 font-bold"
-                          >
-                            Learn At Fligno
-                          </Typography>
-                          <Typography className="font-normal text-blue-gray-500">
-                            Basic CRUD Laravel API training with Software
-                            Engineers of Fligno. It was a fun and engaging
-                            experience, kuddos to the trainors who were very
-                            attentive to our questions ;)
-                          </Typography>
-                        </CardBody>
-                      </Card>
-                    </div>
-                    <div className="mx-auto mt-12 w-full px-4 md:w-5/12">
-                      <Typography className="mb-8 font-normal text-blue-gray-500 ">
-                        Fligno has always prioritized the growth and development
-                        of its employees, and one of the ways they exemplified
-                        this was through their engaging learning sessions. The
-                        company recognized the importance of continuous learning
-                        in the ever-evolving field of technology, and they
-                        actively encouraged us to participate in these valuable
-                        sessions. Whether it was workshops, training programs,
-                        or guest speaker sessions, Fligno provided us with
-                        opportunities to expand our knowledge and enhance our
-                        skills. These learning sessions were thoughtfully
-                        designed to cover a wide range of topics, from the
-                        latest industry trends to emerging technologies. By
-                        joining these sessions, we were able to stay abreast of
-                        the cutting-edge advancements in our field and
-                        strengthen our expertise.
-                      </Typography>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <section id="curatoro-team" className="px-4 pb-32 pt-20">
-                <div className="container mx-auto">
-                  <PageTitle heading="Team Cuatro">
-                    Immensely grateful for the opportunity to collaborate with
-                    these exceptional individuals. Our collaborative environment
-                    fostered a sense of camaraderie and teamwork, where ideas
-                    were freely shared, and diverse perspectives were valued.
-                  </PageTitle>
-                  <div className="mx-3 mt-12 grid grid-cols-1 gap-20 gap-x-10 gap-y-10 md:grid-cols-2 lg:mx-20 lg:mt-24 xl:grid-cols-4">
-                    {highlights.map(({ img, name }) => (
-                      <TeamCard key={name} img={img} name={name} />
-                    ))}
-                  </div>
-                </div>
-              </section>
-
-              <section id="curatoro-site" className="px-4 pb-48 pt-20">
-                <div className="container mx-auto">
-                  <PageTitle heading="Bringing The Art To The Cart">
-                    Curatoro is the result of our teamwork and collaboration
-                    during our internship at Fligno. It is a marketplace for Art
-                    Enthusiasts who love to buy original made artworks. I play
-                    the part as the Backend Developer of this project and this
-                    is still a work on progress but I would say people will love
-                    this once this project will be deployed.
-                  </PageTitle>
-                  <div className="mx-3 mt-12 grid grid-cols-1 gap-20 gap-x-10 gap-y-10 md:grid-cols-1 lg:mx-20 lg:mt-24 xl:grid-cols-2">
-                    <Card color="gray" shadow={false}>
-                      <div className="overflow-hidden rounded-2xl shadow-md shadow-gray-800">
-                        <Avatar
-                          src="/img/fligno/15.jpg"
-                          alt="fligno-15"
-                          className="object-stretch h-full w-full object-center shadow-lg shadow-gray-500/25 transition delay-150 ease-in-out hover:scale-125 "
-                        />
-                      </div>
-                    </Card>
-                    <Card color="transparent" shadow={false}>
-                      <div className="h-full w-full overflow-hidden rounded-2xl shadow-md shadow-gray-800">
-                        <Avatar
-                          src="/img/fligno/16.jpg"
-                          alt="fligno-16"
-                          className="h-full w-full object-cover object-center shadow-lg shadow-gray-500/25 transition delay-150 ease-in-out hover:scale-125 "
-                        />
-                      </div>
-                    </Card>
                   </div>
                 </div>
               </section>

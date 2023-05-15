@@ -14,7 +14,7 @@ export function Reflection() {
         <div className="bg-profile-background absolute top-0 h-full w-full bg-[url('/img/fligno/6.JPG')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/75 bg-cover bg-center" />
       </section>
-      <section className="relative bg-blue-gray-50/50 px-4 py-16">
+      <section className="relative bg-blue-gray-50/50 px-12 py-16">
         <div className="container mx-auto">
           <div className="relative -mt-64 mb-6 flex w-full min-w-0 flex-col break-words rounded-3xl bg-white shadow-xl shadow-gray-500/5">
             <div className="px-6">
